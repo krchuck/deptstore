@@ -26,7 +26,6 @@ class DepartmentsController < ApplicationController
       render :new
     end
   end
-
   def update
     if @department.update(department_params)
       redirect_to @department
@@ -34,7 +33,7 @@ class DepartmentsController < ApplicationController
       render :edit
     end
   end
-
+# ..
   def destroy
   @department.destroy
     redirect_to departments_path
