@@ -1,0 +1,12 @@
+<h1> Change a department </h1>
+
+
+
+<%= form_for @department do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_area :name %>
+
+    <%= f.submit %>
+<%= link_to 'Main Page', root_path %>
+<% end %>

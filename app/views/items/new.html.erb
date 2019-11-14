@@ -1,0 +1,8 @@
+<h1>Add an item</h1>
+<%= form_for @item do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_area :name %>
+
+    <%= f.submit %>
+<% end %>

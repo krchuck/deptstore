@@ -1,0 +1,9 @@
+<h1>Edit an Item</h1>
+<%= form_for @item do |f| %>
+
+  <%= f.label :name %>
+  <%= f.text_area :name %>
+
+    <%= f.submit %>
+<%= link_to 'Main Page', root_path %>
+<% end %>
